@@ -123,15 +123,16 @@
 									}}
 								>
 									<img
-										crossorigin="anonymous"
-										src={model?.info?.meta?.profile_image_url ??
-											($i18n.language === 'dg-DG'
-												? `/doge.png`
-												: `${WEBUI_BASE_URL}/static/favicon.png`)}
-										class=" size-9 @sm:size-10 rounded-full border-[1px] border-gray-100 dark:border-none"
-										alt="logo"
-										draggable="false"
-									/>
+	crossorigin="anonymous"
+	src={model?.info?.meta?.profile_image_url ?? 
+	     ($i18n.language === 'dg-DG' ? `/doge.png` : `${WEBUI_BASE_URL}/static/favicon.png`)}
+	alt="logo"
+	draggable="false"
+	class=" dark:border-none"
+	style="width: 120px; height: 40px; border-radius: 0; transform: rotate(0deg); opacity: 1;"
+/>
+
+
 								</button>
 							</Tooltip>
 						{/each}
